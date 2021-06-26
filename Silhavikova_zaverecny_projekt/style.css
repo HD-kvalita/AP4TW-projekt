@@ -1,0 +1,131 @@
+.header {
+    position: fixed;
+    top: 0;
+    background: #151d2cd0;
+    color: rgb(246, 255, 255);
+    width: 100%;
+    max-width: 100%;
+    align-items: center;
+}
+
+body {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;
+    background: #222;
+    background-image: url('https://source.unsplash.com/1920x1080/?sky');
+    font-size: 120%;
+}
+
+.card {
+    background: #151d2cd0;
+    color: rgb(246, 255, 255);
+    padding: 2.5em;
+    border-radius: 40px;
+    width: 100%;
+    max-width: 420px;
+    margin: 1em;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+}
+
+.search {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+button {
+    margin: 0.5em;
+    border-radius: 50%;
+    border: none;
+    height: 46px;
+    width: 46px;
+    outline: none;
+    background: #648cd42b;
+    color: rgb(246, 255, 255);
+    cursor: pointer;
+    transition: 0.2s ease-in-out;
+}
+
+button:hover {
+    background: #648cd46b;
+}
+
+input.search-bar {
+    border: none;
+    outline: none;
+    padding: 0.43em 1em;
+    border-radius: 24px;
+    background: #648cd42b;
+    color: rgb(246, 255, 255);
+    font-family: inherit;
+    font-size: 105%;
+    width: 90%;
+}
+
+h1.temp {
+    margin: 0;
+    margin-bottom: 0.4em;
+}
+
+.flag {
+    padding-top: 2.5px;
+    padding-left: 15px;
+}
+
+.countryflag {
+    display: flex;
+    align-items: center;
+}
+
+.flex {
+    display: flex;
+    align-items: center;
+}
+
+.description {
+    text-transform: capitalize;
+    margin-left: 8px;
+}
+
+.weather.loading {
+    visibility: hidden;
+    max-height: 20px;
+    position: relative;
+}
+
+.weather.loading:after {
+    visibility: visible;
+    content: "Probíhá načítání dat";
+    color: rgb(246, 255, 255);
+    position: absolute;
+    top: 0;
+    left: 20px;
+}
+
+.mapstaveni {
+    margin-left: 20px;
+}
+
+#weathermap {
+    padding-top: 10px;
+    height: 180px;
+}
+
+.footer {
+    background: #151d2cd0;
+    color: rgb(246, 255, 255);
+    padding: 1.5em;
+    border-radius: 25px;
+    width: 100%;
+    max-width: 290px;
+    margin: 1em;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+}
